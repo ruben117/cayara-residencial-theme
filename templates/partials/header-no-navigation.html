@@ -18,14 +18,18 @@
 
     {# Logo #}
 
-    <div class="header__logo">
-      {% module "site_logo"
-        path="@hubspot/logo"
-        img={
-          "loading": "eager"
-        }
-      %}
-    </div>
+    {# Logo – editable en el editor global, independiente del logo de cuenta #}
+      <div class="header__logo">
+        {% module "site_logo"
+          path="@hubspot/logo",
+          label="Real Madeira",
+          img={
+            "override_inherited_src": true,
+            "src": get_asset_url("../../images/logo-color-cayara-residencial.png"),
+            "loading": "eager"
+          }
+        %}
+      </div>
 
   </div>
 

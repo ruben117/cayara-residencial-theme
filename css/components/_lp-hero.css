@@ -1,0 +1,41 @@
+/* Landing page hero */
+
+.body-container--landing-page .dnd-section:first-child {
+  min-height: 80vh;
+}
+
+.lp-hero__heading,
+.lp-hero__subheading {
+  text-align: center;
+}
+
+.lp-hero__heading h1 {
+  color: var(--primary-color);
+  font-family: var(--font-family-base);
+  font-size: clamp(1.5rem, 3vw, 2.75rem);
+  font-weight: var(--font-weight-heading-black);
+  line-height: 1.1;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.lp-hero__subheading h2 {
+  color: #ffffff;
+  font-family: var(--font-family-base);
+  font-size: clamp(20px, 35px, 45px);
+  font-weight: var(--font-weight-base);
+  line-height: 1.4;
+  margin: 30px auto 20px;
+}
+
+@media (max-width: 767px) {
+  .lp-hero__heading h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .lp-hero__subheading h2 {
+    font-size: 27px;
+    line-height: 35px;
+  }
+}

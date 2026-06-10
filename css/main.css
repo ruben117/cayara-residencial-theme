@@ -1,10 +1,31 @@
 /* Theme base styles */
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap');
 
 /* Tools
 Any animations, or functions used throughout the project.
 Note: _macros.css needs to be imported into each stylesheet where macros are used and not included here
 */
-
+:root {
+  --primary-color: #b47f00;
+  --secondary-color: #000104;
+  --accent-color: #b47f00;
+  --primary-color-black: #2D2D2D;
+  --text-color: #000104;
+  --heading-color: #b47f00;
+  --legal-color: #8B929F;
+  --font-family-base: 'Ibarra Real Nova', 'Roboto', sans-serif;
+  --font-size-base: 16px;
+  --font-size-disclaimer:10px;
+  --font-size-heading: clamp(30px, 1.9vw, 40px);
+  --font-size-heading-big: clamp(1.75rem, 2.5vw, 2.2rem);
+  --font-size-subheading: 40px;
+  --letter-spacing-base: 5px;
+  --font-weight-base: 400;
+  --font-weight-thin: 200;
+  --font-weight-heading: 500;
+  --font-weight-heading-black: 700;
+  --padding-btn: 10px 20px;
+}
 /* Generic
 This is where reset, normalize & box-sizing styles go.
 */
@@ -33,7 +54,11 @@ Specific pieces of UI that are stylized. Typically used for global partial styli
 */
 
 {% include './components/_header.css' %}
+{% include './components/_footer.css' %}
 {% include './components/_default-modules.css' %}
+{% include './components/_lp-hero.css' %}
+{% include './components/_lp-registro.css' %}
+{% include './components/_lp-amenidades.css' %}
 
 /* Utilities
 Helper classes with ability to override anything that comes before it

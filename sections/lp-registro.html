@@ -1,0 +1,39 @@
+<!--
+  templateType: section
+  label: LP Registro — Cayara Residencial
+  isAvailableForNewContent: false
+  description: "Sección de registro con texto informativo y formulario de contacto"
+-->
+{% dnd_section
+  background_color="#F6F6F5",
+  vertical_alignment="MIDDLE",
+  padding={
+    "default": { "top": 80, "bottom": 80 },
+    "mobile":  { "top": 60, "bottom": 60 }
+  }
+%}
+  {% dnd_column offset=0, width=12 %}
+    {% dnd_row %}
+
+      {% dnd_module
+        path="@hubspot/rich_text",
+        label="Registro — Contenido",
+        extra_classes="lp-registro__content",
+        offset=0, width=7,
+        html="<h2><strong>REGÍSTRATE HOY</strong> Y RECIBE ANTES QUE NADIE INFORMACIÓN EXCLUSIVA SOBRE LA PREVENTA, PRECIOS DE LANZAMIENTO Y BENEFICIOS ESPECIALES.</h2><p>Sé de los primeros en conocer el desarrollo residencial que combina ubicación, confort, plusvalía y calidad de vida.</p><blockquote>¡Residencial en preventa en Querétaro!</blockquote>"
+      %}
+      {% end_dnd_module %}
+
+      {% dnd_module
+        path="@hubspot/form",
+        label="Registro — Formulario",
+        extra_classes="lp-registro__form-module",
+        offset=7, width=5,
+        title="FORMULARIO DE CONTACTO",
+        form={ "form_id": "" }
+      %}
+      {% end_dnd_module %}
+
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}

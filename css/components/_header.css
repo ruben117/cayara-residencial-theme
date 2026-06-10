@@ -1,3 +1,14 @@
+/* Header — landing page (sin navegación, overlay transparente sobre el hero) */
+
+.header--no-navigation {
+  background: transparent !important;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
 /* Header DND sections */
 
 .header .dnd-section {
@@ -470,5 +481,47 @@
 
   .header__close--toggle.show {
     display: block;
+  }
+}
+
+
+
+
+/* ── Logo ────────────────────────────────────────────────── */
+
+.header__logo {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  max-width: 115px;
+}
+
+.header__logo img {
+  display: block;
+  height: auto;
+  max-width: 100%; 
+  padding: 5px;
+}
+
+/* Texto del logo si no hay imagen */
+.header__logo .logo-company-name {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* ── Responsive – Mobile (≤ 767px) ──────────────────────── */
+
+@media (max-width: 767px) {
+  .header__logo {
+    max-width: 100px;
+  }
+}
+
+/* ── Responsive – Tablet (768px – 1023px) ───────────────── */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header__logo {
+    max-width: 140px;
   }
 }

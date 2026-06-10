@@ -1,0 +1,70 @@
+<!--
+  templateType: section
+  label: LP Amenidades — Cayara Residencial
+  isAvailableForNewContent: false
+  description: "Sección de amenidades con dos headings y dos imágenes en columnas"
+-->
+{% dnd_section
+  background_color="#2D2D2D",
+  vertical_alignment="MIDDLE",
+  padding={
+    "default": { "top": 60, "bottom": 60 },
+    "mobile":  { "top": 40, "bottom": 40 }
+  }
+%}
+  {% dnd_column offset=0, width=12 %}
+
+    {% dnd_row %}
+      {% dnd_module
+        path="@hubspot/rich_text",
+        label="Amenidades — H3 Blanco",
+        extra_classes="lp-amenidades__heading-white",
+        offset=0, width=12,
+        html="<h3>VIVE LA OPORTUNIDAD DE INVERTIR Y ESTRENAR</h3>"
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+
+    {% dnd_row %}
+      {% dnd_module
+        path="@hubspot/rich_text",
+        label="Amenidades — H3 Primario",
+        extra_classes="lp-amenidades__heading-primary",
+        offset=0, width=12,
+        html="<h3>EN UNA DE LAS ZONAS CON MAYOR CRECIMIENTO EN QUERÉTARO</h3>"
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+
+    {% dnd_row %}
+      {% dnd_module
+        path="@hubspot/linked_image",
+        label="Amenidades — Áreas Verdes",
+        extra_classes="lp-amenidades__img",
+        offset=0, width=6,
+        img={
+          "src": get_asset_url("../images/cayara-areas-verdes.jpg"),
+          "alt": "Áreas verdes Cayara Residencial",
+          "loading": "lazy",
+          "size_type": "auto_full_width"
+        }
+      %}
+      {% end_dnd_module %}
+
+      {% dnd_module
+        path="@hubspot/linked_image",
+        label="Amenidades — Skatepark",
+        extra_classes="lp-amenidades__img",
+        offset=6, width=6,
+        img={
+          "src": get_asset_url("../images/cayara-skatebord-park.jpg"),
+          "alt": "Skatepark Cayara Residencial",
+          "loading": "lazy",
+          "size_type": "auto_full_width"
+        }
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+
+  {% end_dnd_column %}
+{% end_dnd_section %}
