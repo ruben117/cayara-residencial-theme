@@ -6,7 +6,7 @@
     "url": "https://www.touchpointmarketing.mx/"
   },
   "preview_path": "./templates/home.html",
-  "screenshot_path": "./images/template-previews/home.png",
+  "screenshot_path": "./images/template-previews/landing-page-preventa.jpg",
   "enable_domain_stylesheets": false,
   "license": "./license.txt",
   "responsive_breakpoints": [

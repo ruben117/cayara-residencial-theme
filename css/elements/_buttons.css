@@ -38,3 +38,9 @@ button:disabled,
   text-decoration: none;
   transition: none;
 }
+
+#hs_cos_wrapper_widget_1781142912527 .button:hover, #hs_cos_wrapper_widget_1781142912527 .button:focus {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color);
+    font-weight: 700;
+}
