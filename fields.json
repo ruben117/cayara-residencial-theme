@@ -67,7 +67,7 @@
         },
         "default": {
           "fallback": "sans-serif",
-          "font": "Ibarra Real Nova",
+          "font": "Montserrat",
           "font_set": "GOOGLE"
         }
       },
@@ -89,7 +89,7 @@
         },
         "default": {
           "fallback": "serif",
-          "font": "Ibarra Real Nova",
+          "font": "Montserrat",
           "font_set": "GOOGLE"
         }
       }

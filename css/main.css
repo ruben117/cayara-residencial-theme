@@ -1,5 +1,5 @@
 /* Theme base styles */
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Tools
 Any animations, or functions used throughout the project.
@@ -13,7 +13,7 @@ Note: _macros.css needs to be imported into each stylesheet where macros are use
   --text-color: #000104;
   --heading-color: #b47f00;
   --legal-color: #8B929F;
-  --font-family-base: 'Ibarra Real Nova', 'Roboto', sans-serif;
+  --font-family-base: 'Montserrat', 'Roboto', sans-serif;
   --font-size-base: 16px;
   --font-size-disclaimer:10px;
   --font-size-heading: clamp(30px, 1.9vw, 40px);
