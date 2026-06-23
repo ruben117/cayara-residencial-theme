@@ -493,7 +493,7 @@
   align-items: center;
   display: flex;
   flex-shrink: 0;
-  max-width: 115px;
+  max-width: 150px;
 }
 
 .header__logo img {
@@ -522,6 +522,6 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .header__logo {
-    max-width: 140px;
+    max-width: 150px;
   }
 }
